@@ -1,10 +1,17 @@
+#참고 https://hacktagon.github.io/web%20xss/XSS-Challenges-writeup-Alert-1-to-win-(Part-1)/(Part-2)
+
 =====================
 [CASE1]
+JSON.stringify 통한 입력값 치환, JSON.stringify는 
+JSON에서 사용되는 더블쿼터(“)에 역슬래시를 자동으로 추가합니다.
+물론 더블쿼터를 탈출할 수 있는 역슬래시 또한 자동으로 역슬래시가 붙습니다. 
+단점으로는 화살괄호(<>)는 치환하지 못합
+
 <script type="text/javascript">
-	var sample1 = {
-    var1111: "t"=="f",
-		var2222 : (function() {
-			var aaa = "aa})}</script><script>alert();</script><script>";
+var sample1 = {
+	var1111: "t"=="f",
+	var2222 : (function() {
+		var aaa = "aa})}</script><script>alert();</script><script>";
 </script>
 
 참고: https://alf.nu/alert1?world=alert&level=alert2
