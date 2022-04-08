@@ -1,0 +1,14 @@
+=====================
+[CASE1]
+<script type="text/javascript">
+	var sample1 = {
+    var1111: "t"=="f",
+		var2222 : (function() {
+			var aaa = "aa})}</script><script>alert();</script><script>";
+</script>
+
+참고: https://alf.nu/alert1?world=alert&level=alert2
+========================
+
+
+
